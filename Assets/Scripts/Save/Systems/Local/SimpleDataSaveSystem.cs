@@ -20,5 +20,6 @@ public class SimpleDataSaveSystem : ISaveData
     {
         var convertValue = (string)Convert.ChangeType(value, typeof(string));
         PlayerPrefs.SetString(key, convertValue);
+        PlayerPrefs.Save();
     }
 }
